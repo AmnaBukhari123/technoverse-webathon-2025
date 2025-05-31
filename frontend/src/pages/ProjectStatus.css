@@ -1,0 +1,120 @@
+/* Project.css */
+.page-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--primary-dark);
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-out;
+}
+
+.project-section {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-section h2 {
+  font-size: 24px;
+  color: var(--primary-blue);
+  margin-bottom: 15px;
+  animation: slideInFromLeft 1s ease;
+}
+
+.project-list {
+  margin-bottom: 20px;
+}
+
+.project-item {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+  transform: translateX(4px);
+}
+
+.project-item.selected {
+  border: 2px solid var(--primary-blue);
+}
+
+.project-item h3 {
+  font-size: 18px;
+  color: var(--primary-dark);
+}
+
+.project-item p {
+  color: var(--primary-blue);
+}
+
+.project-details {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-details h3 {
+  font-size: 22px;
+  color: var(--primary-dark);
+  margin-bottom: 15px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  font-size: 16px;
+  color: var(--primary-blue);
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group select, .input-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.update-btn {
+  background-color: var(--primary-blue);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.update-btn:hover {
+  background-color: var(--primary-dark);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

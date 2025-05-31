@@ -1,0 +1,74 @@
+/* Reports.css */
+.page-title {
+margin-left: 40px;
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--primary-dark);
+  margin-bottom: 20px;
+}
+
+.report-section {
+    margin-left: 40px;
+
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.report-section h2 {
+  font-size: 24px;
+  color: var(--primary-blue);
+  margin-bottom: 15px;
+}
+
+.report-list {
+  margin-bottom: 20px;
+}
+
+.report-item {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.report-item h3 {
+  font-size: 18px;
+  color: var(--primary-dark);
+}
+
+.report-item p {
+  color: var(--primary-blue);
+}
+
+.upload-btn {
+  background-color: var(--primary-blue);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.upload-btn:hover {
+  background-color: var(--primary-dark);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 16px;
+  }
+
+  .report-section {
+    padding: 16px;
+  }
+
+  .upload-btn {
+    width: 100%;
+  }
+}

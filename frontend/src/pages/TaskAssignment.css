@@ -1,0 +1,71 @@
+/* General Styles */
+.task-assignment {
+  padding: 30px;
+  /* background-color: #f9f9f9; */
+  min-height: 100vh;
+  margin-left: 300px;
+}
+
+.page-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #345E63;
+}
+
+.add-task {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.add-task input, .add-task select {
+  padding: 10px 16px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.add-task button {
+  padding: 10px 20px;
+  background-color: #345E63;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-task button:hover {
+  background-color: #164DBF;
+}
+
+.tasks-list {
+  margin-top: 20px;
+}
+
+.tasks-list ul {
+  list-style-type: none;
+}
+
+.tasks-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.tasks-list li span {
+  margin-right: 20px;
+}
+
+.tasks-list button {
+  padding: 5px 10px;
+  background-color: #ff4444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tasks-list button:hover {
+  background-color: #cc0000;
+}

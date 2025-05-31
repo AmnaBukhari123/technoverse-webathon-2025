@@ -1,0 +1,98 @@
+/* Sidebar.css */
+.sidebar {
+  width: 220px;
+  background-color: #073A41;
+  height: 100vh;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  transition: width 0.3s;
+}
+
+.sidebar:hover {
+  width: 260px;
+}
+
+.sidebar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #345E63;
+  margin-bottom: 30px;
+}
+
+.sidebar nav a {
+  color: white;
+  text-decoration: none;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  transition: 0.3s;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.sidebar nav a .icon {
+  margin-right: 10px;
+  min-width: 20px;
+}
+
+.sidebar nav a:hover {
+  background: rgba(52, 94, 99, 0.1);
+  transform: translateX(4px);
+}
+
+.sidebar nav a.active {
+  font-weight: bold;
+  background: linear-gradient(135deg, #0B4C51, #0E5E63);
+  color: white;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 60px;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .sidebar .logo {
+    display: none;
+  }
+
+  .sidebar nav a {
+    font-size: 0;
+    padding: 10px;
+    justify-content: center;
+  }
+
+  .sidebar nav a .icon {
+    margin-right: 0;
+  }
+
+  .sidebar nav a .link-text {
+    display: none;
+  }
+
+  .sidebar:hover {
+    width: 220px;
+  }
+
+  .sidebar:hover nav a {
+    font-size: 16px;
+    justify-content: flex-start;
+  }
+
+  .sidebar:hover nav a .icon {
+    margin-right: 10px;
+  }
+
+  .sidebar:hover nav a .link-text {
+    display: inline;
+  }
+}

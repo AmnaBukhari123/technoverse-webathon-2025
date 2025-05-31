@@ -1,0 +1,14 @@
+:root {
+  --primary-dark: #073A41; 
+  --primary-blue: #345E63; 
+  --primary-light: #3B747F; 
+  --text-color: #383838; 
+  --gradient-bg: linear-gradient(135deg, #345E63, #3B747F); 
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #FFFFFF; 
+  color: var(--text-color); 
+}

@@ -1,0 +1,144 @@
+.role-permissions {
+  margin-left: 300px;
+  padding: 30px 40px;
+  /* background-color: #FFFFFF; */
+  min-height: 100vh;
+  color: #383838;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.page-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #345E63;
+  font-weight: bold;
+}
+
+.add-role {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.add-role input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 250px;
+}
+
+.add-role-btn {
+  background: linear-gradient(135deg, #345E63, #3B747F);
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.3s ease;
+}
+
+.add-role-btn:hover {
+  background: #345E63;
+}
+
+.roles-list {
+  margin-bottom: 40px;
+}
+
+.roles-list h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.roles-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.roles-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.roles-list li:hover {
+  background-color: #f0f9fa;
+}
+
+.roles-list button {
+  background: none;
+  border: none;
+  color: #ff5555;
+  cursor: pointer;
+}
+
+.permissions-panel {
+  background: #f0f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.permissions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.permission-item {
+  display: flex;
+  align-items: center;
+}
+
+.permission-item input {
+  margin-right: 10px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.save-btn,
+.cancel-btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.save-btn {
+  background: linear-gradient(135deg, #345E63, #3B747F);
+  color: white;
+  transition: background 0.3s ease;
+}
+
+.save-btn:hover {
+  background: #345E63;
+}
+
+.cancel-btn {
+  background: #fff;
+  border: 2px solid #345E63;
+  color: #345E63;
+  transition: background 0.3s ease;
+}
+
+.cancel-btn:hover {
+  background: #345E63;
+  color: white;
+}

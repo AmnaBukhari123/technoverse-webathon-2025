@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+
+.landing-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/src/assets/city4.gif'); /* This will only work in public folder or use import in JS */
+  background-size: cover;
+  background-position: center;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  max-width: 400px;
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  animation: fadeInUp 1s ease-out 0.3s forwards;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #f0f0f0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  animation: fadeInUp 1s ease-out 0.6s forwards;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+   animation: slideInRight 1s ease-out forwards;
+}
+
+.arrow-button {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  animation: pulse 2s infinite ease-in-out;
+}
+
+.arrow-button:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.1);
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

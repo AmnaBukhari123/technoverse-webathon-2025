@@ -1,0 +1,52 @@
+.proposal-polls {
+  padding: 30px;
+  margin-left: 300px;
+}
+
+.page-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.add-poll {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.add-poll input, .add-poll textarea {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.add-poll button {
+  padding: 10px 20px;
+  background-color: #0f2246;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.polls-list .poll-card {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.poll-card h3 {
+  margin-bottom: 10px;
+}
+
+.poll-card ul {
+  list-style-type: none;
+}
+
+.poll-card li {
+  font-size: 16px;
+  color: #345e63;
+}
